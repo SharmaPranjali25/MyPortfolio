@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranjali Sharma — Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal-overlay" id="projectModalOverlay">
+    <div class="project-modal-box" id="projectModalBox">
+      <button class="project-modal-close" id="projectModalClose">&times;</button>
+      <h2 class="project-modal-title" id="modalTitle"></h2>
+      <p class="project-modal-category" id="modalCategory"></p>
+      <div class="project-modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Pranjali Sharma" width="80"
+            style="border-radius:20px;object-fit:cover;object-position:center top;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Pranjali Sharma">Pranjali Sharma</h1>
+          <p class="title">Software Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:sharmapranjali115@gmail.com" class="contact-link">sharmapranjali115@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+919015051115" class="contact-link">+91 9015051115</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Mandi, Himachal Pradesh, India</address>
+            </div>
+          </li>
+
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/pranjali-sharma-338b4a22a/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/SharmaPranjali25" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Software Developer at Mphasis Limited, bringing over a year of hands-on experience in the technology
+            industry. With a strong foundation in both backend and frontend development, I specialize in Java, Spring
+            Framework, Spring Boot, Maven, SQL, JDBC, and JPA on the server side, complemented by proficiency in
+            Angular and Node.js for frontend and runtime environments, as well as C++.
+          </p>
+          <p>
+            I am committed to building robust, scalable software solutions that drive meaningful impact. I continue to
+            grow my expertise in modern software development practices — from REST API design and test automation to
+            full-stack integration and cloud fundamentals.
+          </p>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-backend.png" alt="Backend Development icon" width="55">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+                <p class="service-item-text">
+                  Building scalable REST APIs and backend systems using <strong>Java, Spring Boot & Spring MVC</strong>.
+                  Experienced in designing clean architecture, role-based access control, and integrating
+                  <strong>JPA/Hibernate</strong> for efficient database operations with MySQL.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-frontend.png" alt="Frontend Development icon" width="55">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <p class="service-item-text">
+                  Crafting responsive, dynamic UIs using <strong>Angular, TypeScript, HTML & CSS</strong>.
+                  Skilled in building component-based applications, integrating RESTful APIs, and delivering
+                  seamless user experiences across devices.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </article>
+
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Thapar Institute of Engineering and Technology</h4>
+              <span>B.E. Computer Science and Engineering &nbsp;|&nbsp; GPA: 8.14</span>
+              <p class="timeline-text">
+                Coursework: Object-Oriented Programming, Operating Systems, Data Structures & Algorithms, DBMS,
+                Financial Derivatives, Computer Networks.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Lords Convent Public School, Sarkaghat, Mandi</h4>
+              <span>Secondary Education &nbsp;|&nbsp; 2020 – 2021</span>
+              <p class="timeline-text">
+                Percentage: 98.14% &nbsp;|&nbsp; Subjects: Physics, Chemistry, Mathematics, Computer Science, English.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer — Mphasis Limited</h4>
+              <span>June 2025 — Present</span>
+              <p class="timeline-text">
+                Full-time Software Engineer delivering end-to-end web application development covering frontend UI and
+                backend business logic using Java, Spring Boot & Angular via RESTful APIs.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Software Engineer Intern — Mphasis Limited</h4>
+              <span>Feb 2025 — May 2025</span>
+              <p class="timeline-text">
+                Built a complete Emergency Rescue Reporting System — designed the database schema, developed backend
+                APIs with Java & Spring Boot, and integrated them with Angular frontend components using MySQL, JPA & Hibernate.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+          <div class="skills-grid">
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="code-slash-outline"></ion-icon> Programming Languages</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-blue">Java</span>
+                <span class="skill-tag tag-cyan">C</span>
+                <span class="skill-tag tag-cyan">C++</span>
+                <span class="skill-tag tag-blue">TypeScript</span>
+                <span class="skill-tag tag-purple">SQL</span>
+                <span class="skill-tag tag-orange">HTML</span>
+                <span class="skill-tag tag-orange">CSS</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="server-outline"></ion-icon> Backend Frameworks</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-blue">Spring Boot</span>
+                <span class="skill-tag tag-blue">Spring MVC</span>
+                <span class="skill-tag tag-cyan">Node.js</span>
+                <span class="skill-tag tag-purple">Maven</span>
+                <span class="skill-tag tag-cyan">JPA</span>
+                <span class="skill-tag tag-cyan">Hibernate</span>
+                <span class="skill-tag tag-orange">RESTful APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="browsers-outline"></ion-icon> Frontend Frameworks</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-orange">Angular</span>
+                <span class="skill-tag tag-orange">HTML</span>
+                <span class="skill-tag tag-orange">CSS</span>
+                <span class="skill-tag tag-blue">TypeScript</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="bug-outline"></ion-icon> Testing & Automation</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-green">Selenium WebDriver</span>
+                <span class="skill-tag tag-green">TestNG</span>
+                <span class="skill-tag tag-green">Selenium IDE</span>
+                <span class="skill-tag tag-green">Selenium Grid</span>
+                <span class="skill-tag tag-purple">Page Object Model</span>
+                <span class="skill-tag tag-purple">Test Automation Frameworks</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="server-outline"></ion-icon> Databases</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-blue">MySQL</span>
+                <span class="skill-tag tag-cyan">JDBC</span>
+                <span class="skill-tag tag-cyan">JPA/Hibernate</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="construct-outline"></ion-icon> Tools & Platforms</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-orange">Postman</span>
+                <span class="skill-tag tag-purple">Git</span>
+                <span class="skill-tag tag-purple">GitHub</span>
+                <span class="skill-tag tag-blue">IntelliJ IDEA</span>
+                <span class="skill-tag tag-blue">Spring Tool Suite</span>
+                <span class="skill-tag tag-blue">VS Code</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <h4 class="skill-cat-title"><ion-icon name="cloud-outline"></ion-icon> Cloud & Other</h4>
+              <div class="skill-tags">
+                <span class="skill-tag tag-cyan">AWS Cloud Foundations</span>
+                <span class="skill-tag tag-orange">Microsoft Power BI</span>
+                <span class="skill-tag tag-purple">Cyber Security Basics</span>
+                <span class="skill-tag tag-green">Generative AI Essentials</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+
+
+      <!-- PROJECTS -->
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Full Stack</button></li>
+            <li class="filter-item"><button data-filter-btn>Testing</button></li>
+            <li class="filter-item"><button data-filter-btn>Web Development</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Full Stack</button></li>
+              <li class="select-item"><button data-select-item>Testing</button></li>
+              <li class="select-item"><button data-select-item>Web Development</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="full stack">
+              <a href="#" class="project-card-link"
+                data-title="Emergency Rescue Reporting"
+                data-category="Full Stack"
+                data-github="https://github.com/SharmaPranjali25/Emergency_Rescue_Reporting"
+                data-desc="A full-stack web-based emergency management platform designed to enhance workplace safety and streamline emergency response procedures. The system supports employee management, attendance tracking, and real-time incident reporting with facial recognition integration for automated safety monitoring.
+
+TECHNOLOGIES USED:
+Java • Spring Boot • MySQL • JPA/Hibernate • RESTful APIs • Angular • HTML • CSS • Maven • Postman • Facial Recognition Integration
+
+MY ROLE & CONTRIBUTION:
+• Collaborated with the Full-Stack Java Development Team to architect and develop the entire backend system
+• Implemented core backend functionalities following RESTful API design principles and clean code architecture
+• Developed multiple API endpoints for CRUD operations on employee data, attendance records, and emergency incident management
+• Integrated JPA/Hibernate for efficient database operations and implemented custom query methods for complex data retrieval
+• Enforced role-based access control for sensitive emergency data and ensured secure data handling
+• Validated all critical workflows through comprehensive API testing via Postman">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <div class="project-placeholder">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    <span>Emergency Rescue Reporting</span>
+                  </div>
+                </figure>
+                <h3 class="project-title">Emergency Rescue Reporting</h3>
+                <p class="project-category">Full Stack</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#" class="project-card-link"
+                data-title="Hostel Management System"
+                data-category="Web Development"
+                data-github="https://github.com/SharmaPranjali25/HMS_Project2"
+                data-desc="A comprehensive web application designed to streamline the management of hostel operations. Addresses common challenges faced by hostel administrators and students with a user-friendly interface.
+
+FEATURES:
+• User Authentication — Admin Login for hostel operations & Student Login for personal info
+• Room Management — View available rooms, amenities, occupancy status & reservation system
+• Fee Management — Online fee payment, payment history and tracking
+• Leave Applications — Submit leave requests & track application status in real-time
+• Late Entry Management — Request late entry permissions with automated approval notifications
+
+TECHNOLOGY STACK:
+Frontend: HTML • CSS • JavaScript
+Backend: PHP
+Database: MySQL">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <div class="project-placeholder project-placeholder-2">
+                    <ion-icon name="business-outline"></ion-icon>
+                    <span>Hostel Management System</span>
+                  </div>
+                </figure>
+                <h3 class="project-title">Hostel Management System</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="testing">
+              <a href="#" class="project-card-link"
+                data-title="Test Automation Framework"
+                data-category="Testing"
+                data-github="https://github.com/SharmaPranjali25/SeleniumTest"
+                data-desc="A robust, reusable test automation framework to automate end-to-end testing workflows for web applications. Built following industry best practices to ensure scalability, maintainability, and efficient test execution.
+
+TECHNOLOGIES USED:
+Selenium WebDriver • TestNG • Java • Maven • Page Object Model (POM)
+
+MY ROLE & CONTRIBUTION:
+• Designed and developed the entire framework from scratch as a self-driven learning initiative
+• Implemented the Page Object Model (POM) design pattern to separate test logic from UI structure, improving code reusability
+• Created modular page classes encapsulating web element locators and page-specific actions for scalable test development
+• Configured TestNG XML suites for parallel test execution across multiple browsers
+• Gained practical experience in test automation best practices applicable to real-world QA environments">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <div class="project-placeholder project-placeholder-3">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    <span>Test Automation Framework</span>
+                  </div>
+                </figure>
+                <h3 class="project-title">Test Automation Framework</h3>
+                <p class="project-category">Testing</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- CONTACT -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
