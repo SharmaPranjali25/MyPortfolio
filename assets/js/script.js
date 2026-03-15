@@ -140,3 +140,30 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// CERTIFICATE LIGHTBOX
+const certLightbox = document.getElementById("certLightbox");
+const certLightboxImg = document.getElementById("certLightboxImg");
+const certLightboxClose = document.getElementById("certLightboxClose");
+const certLightboxOverlay = document.getElementById("certLightboxOverlay");
+
+document.querySelectorAll(".cert-img-clickable").forEach(function (img) {
+  img.addEventListener("click", function () {
+    certLightboxImg.src = this.dataset.full;
+    certLightboxImg.alt = this.alt;
+    certLightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function closeCertLightbox() {
+  certLightbox.classList.remove("active");
+  document.body.style.overflow = "";
+  certLightboxImg.src = "";
+}
+
+certLightboxClose.addEventListener("click", closeCertLightbox);
+certLightboxOverlay.addEventListener("click", closeCertLightbox);
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeCertLightbox();
+});
